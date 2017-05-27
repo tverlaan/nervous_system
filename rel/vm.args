@@ -1,0 +1,14 @@
+## Add custom options here
+-proto_dist Elixir.InetTcp
+-start_epmd false
+-epmd_module Elixir.EAPMD.MDNS
+-sname nervous_system
+-setcookie elixirconfeu
+
+## Start the Elixir shell
+-noshell
+-user Elixir.IEx.CLI
+-extra --no-halt
+
+## Options added here are interpreted as plain arguments and
+## can be retrieved using :init.get_plain_arguments().
